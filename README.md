@@ -1,4 +1,5 @@
-#vue-animate
+# vue-animate
+
 *Cross-browser CSS3 animation library*
 
 [![Version](https://img.shields.io/npm/v/vue-animate.svg?style=flat-square)](https://www.npmjs.com/package/vue-animate)
@@ -8,8 +9,10 @@ A [Vue.js](http://vuejs.org/ "Vue.js") port of [Animate.css](https://github.com/
 
  - **[DEMO](http://luoye.pw/vue-animate-demo/)** (courtesy of [luoye-fe](https://github.com/luoye-fe))
 
-##Installation
-####HTML
+## Installation
+
+#### HTML
+
 Include the stylesheet:
 
   ```html
@@ -17,7 +20,9 @@ Include the stylesheet:
     <link rel="stylesheet" href="vue-animate.min.css">
   </head>
   ```
-####npm
+
+#### NPM
+
   If you're on webpack and using the [css-loader](https://github.com/webpack/css-loader "css loader"), you can use something like this:
   ```shell
   npm install --save vue-animate
@@ -25,12 +30,15 @@ Include the stylesheet:
   ```js
   require('vue-animate/dist/vue-animate.min.css')
   ```
-####Less
+
+#### Less
+
   ```less
   @import "<PATH_TO_SOURCE>/src/vue-animate.less";
   ```
 
-####Building
+#### Building
+
   ```shell
   git clone https://github.com/haydenbbickerton/vue-animate.git
   cd vue-animate
@@ -38,7 +46,7 @@ Include the stylesheet:
   npm run build #Compiled .css files go to the dist folder
   ```
 
-##Usage
+## Usage
 
   Use [Vue.js transitions](http://vuejs.org/guide/transitions.html "Vue.js Transitions") as you normally would, but for the transition name you will use one of [Animate.css animations](https://github.com/daneden/animate.css#basic-usage "animations") **removing** the ***In/Out*** from the name.
 
@@ -48,7 +56,8 @@ Include the stylesheet:
   ```
   enter/leave is already written in the stylesheet, so just remove *In/Out* from the name and you're golden.
 
-####Custom Transition Classes
+#### Custom Transition Classes
+
   As of 0.0.3, Animate.css's original classnames are supported on enter/leave transitions. So if you're going to use [Custom Transition Classes](http://vuejs.org/guide/transitions.html#Custom-Transition-Classes "Custom Transition Classes"), you can either add *-enter/-leave* to the classes:
 
   ```js
@@ -57,6 +66,7 @@ Include the stylesheet:
     leaveClass: 'bounceRight-leave'
   })
   ```
+
   Or use the regular *In/Out* syntax:
 
   ```js
@@ -66,17 +76,20 @@ Include the stylesheet:
   })
   ```
 
-####Supported Animations
+#### Supported Animations
+
   Not all [Animate.css animations](https://github.com/daneden/animate.css#basic-usage "animations") are supported at the moment. Here is a list of what's in vue-animate (aka - *what you can put in the transition="x"* attribute) as of right now:
 
-#####Bounce
+##### Bounce
+
   * `bounce`
   * `bounceDown`
   * `bounceLeft`
   * `bounceRight`
   * `bounceUp`
 
-#####Fade
+##### Fade
+
   * `fade`
   * `fadeDown`
   * `fadeDownBig`
@@ -87,20 +100,23 @@ Include the stylesheet:
   * `fadeUp`
   * `fadeUpBig`
 
-#####Rotate
+##### Rotate
+
   * `rotate`
   * `rotateDownLeft`
   * `rotateDownRight`
   * `rotateUpLeft`
   * `rotateUpRight`
 
-#####Slide
+##### Slide
+
   * `slideDown`
   * `slideLeft`
   * `slideRight`
   * `slideUp`
 
-#####Zoom
+##### Zoom
+
   * `zoom`
   * `zoomDown`
   * `zoomLeft`
